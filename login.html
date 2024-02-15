@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to FBS e-Book's Website</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        .header {
+            padding: 5px;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 0;
+            /* Remove margin */
+        }
+        
+        .header h2 {
+            color: black;
+            margin: 0;
+            flex: 1;
+            /* Take remaining space in the flex container */
+        }
+        /*===============[Nav CSS]==========*/
+        
+        .nav {
+            background-color: pink;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .nav li {
+            flex: 1;
+            margin-right: 10px;
+            /* Adjust the space between items */
+        }
+        
+        .nav a {
+            color: darkblue;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+        
+        .nav a:hover {
+            background-color: #7fffd4;
+            color: #243238;
+            color: darkblue;
+        }
+        
+        .lside {
+            float: right;
+            width: 80%;
+            height: 582px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        
+        .rside {
+            text-align: center;
+            list-style: none;
+            float: right;
+            width: 20%;
+            height: 582px;
+            background-color: #c1cdcd;
+        }
+        
+        .rside li {
+            text-align: center;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <img src="/images/logo.png" alt="Logo">
+            <h2 style="color: rgb(255, 0, 0);">MITS ONLINE E-BOOK</h2>
+        </div>
+        <!-- Nav -->
+        <div class="nav">
+            <ul>
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="userprofile.html">User Profile</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div style="height:440px">
+            <div class="lside">
+                <center><br>
+                    <h3> Login Details</h3> <br/>
+                    <form name="f1">
+                        <table align="center">
+                            <tr>
+                                <td> User Name : </td>
+                                <td> <input type="text" name="username"></td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                <td> Password : </td>
+                                <td> <input type="password" name="password"></td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="SUBMIT">
+                                    <input type="reset" value="RESET"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </center>
+
+
+            </div>
+            <!-- side -->
+            <div class="rside">
+
+                <table align=center>
+                    <tr>
+                        <td>
+                            <h3>Catalogue</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="cse.html" target="right">CSE</a><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><a href="it.html" target="right">IT</a><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ece.html" target="right">ECE</a></td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
